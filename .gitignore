@@ -1,0 +1,14 @@
+# Visual Studio cache
+.vs/
+*.user
+*.suo
+
+# Build outputs
+bin/
+obj/
+TestResult*/
+
+# IDE
+.idea/
+.vscode/
+*.DotSettings*
