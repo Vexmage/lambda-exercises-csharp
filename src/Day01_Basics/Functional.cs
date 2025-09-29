@@ -66,25 +66,7 @@ public static class Functional
         return funcs;
     }
 
-    /// <summary>
-    /// Returns true if any element in the sequence matches the predicate.
-    /// </summary>
-    public static bool Any<T>(IEnumerable<T> source, Predicate<T> pred)
-    {
-        foreach (var item in source)
-            if (pred(item)) return true;
-        return false;
-    }
 
-    /// <summary>
-    /// Returns true if all elements in the sequence match the predicate.
-    /// </summary>
-    public static bool All<T>(IEnumerable<T> source, Predicate<T> pred)
-    {
-        foreach (var item in source)
-            if (!pred(item)) return false;
-        return true;
-    }
 
 }
 
