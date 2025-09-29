@@ -4,23 +4,8 @@ using FluentAssertions;
 
 namespace Day01_Basics.Tests;
 
-public class MapFilterTests
+public class ReduceAndClosureTests
 {
-    [Fact]
-    public void Map_AppliesFunctionToEachElement()
-    {
-        var src = new[] { 1, 2, 3 };
-        var doubled = Functional.Map(src, x => x * 2);
-        doubled.Should().Equal(2, 4, 6);
-    }
-
-    [Fact]
-    public void Filter_RemovesNonMatching()
-    {
-        var src = new string?[] { "a", "", "b", null };
-        var nonEmpty = Functional.Filter(src!, s => !string.IsNullOrEmpty(s));
-        nonEmpty.Should().Equal("a", "b");
-    }
 
     [Fact]
     public void Reduce_ShowsIntermediateAccumulators()
